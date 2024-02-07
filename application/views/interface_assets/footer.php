@@ -804,7 +804,7 @@ function showActivatorsMap(call, count, grids) {
               var grid = "No";
             <?php } ?>
             initmap(grid,'map',{'dataPost':{'nb_qso':'18'}});
-
+            setSyncLogWithMap();
       });
     </script>
 <?php } ?>
@@ -948,7 +948,7 @@ $($('#callsign')).on('keypress',function(e) {
               var grid = "No";
         <?php } ?>
             initmap(grid,'map',{'dataPost':{'nb_qso':'25','offset':'<?php echo $this->uri->segment(3); ?>'}});
-
+            setSyncLogWithMap();
     </script>
 <?php } ?>
 

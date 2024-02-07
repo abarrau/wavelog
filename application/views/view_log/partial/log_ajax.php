@@ -54,7 +54,7 @@ function echoQrbCalcLink($mygrid, $grid, $vucc) {
 <?php if ($results) { ?>
 
 <div class="table-responsive">
-    <table style="width:100%" class="table contacttable table-striped table-hover">
+    <table style="width:100%" class="table contacttable table-striped table-hover log-sync-map">
         <thead>
             <tr class="titles">
                 <th><?php echo lang('general_word_date'); ?></th>
@@ -99,7 +99,7 @@ function echoQrbCalcLink($mygrid, $grid, $vucc) {
                     // Get Default date format from /config/wavelog.php
                     $custom_date_format = $this->config->item('qso_date_format');
                 }
-                echo '<tr class="tr'.($i & 1).'" id="qso_'. $row->COL_PRIMARY_KEY .'">'; ?>
+                echo '<tr class="trqso tr'.($i & 1).'" id="qso_'. $row->COL_PRIMARY_KEY .'">'; ?>
             <td><?php $timestamp = strtotime($row->COL_TIME_ON); echo date($custom_date_format, $timestamp); ?></td>
             <?php if(($this->config->item('use_auth') && ($this->session->userdata('user_type') >= 2)) || $this->config->item('use_auth') === FALSE || ($this->config->item('show_time'))) { ?>
                 <td><?php $timestamp = strtotime($row->COL_TIME_ON); echo date('H:i', $timestamp); ?></td>

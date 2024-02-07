@@ -129,7 +129,7 @@ function echoQrbCalcLink($mygrid, $grid, $vucc) {
   <div class="col-sm-8">
 
   	<div class="table-responsive">
-    	<table class="table table-striped table-hover border-top">
+    	<table class="table table-striped table-hover border-top log-sync-map">
 
     		<thead>
 				<tr class="titles">
@@ -152,7 +152,7 @@ function echoQrbCalcLink($mygrid, $grid, $vucc) {
 			$i = 0;
 			if(!empty($last_five_qsos) > 0) {
 			foreach ($last_five_qsos->result() as $row) { ?>
-				<?php  echo '<tr id="qso_'.$row->COL_PRIMARY_KEY.'" class="tr'.($i & 1).'">'; ?>
+				<?php  echo '<tr id="qso_'.$row->COL_PRIMARY_KEY.'" class="trqso tr'.($i & 1).'">'; ?>
 
 					<?php
 
