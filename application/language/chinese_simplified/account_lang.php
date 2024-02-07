@@ -120,6 +120,7 @@ $lang['account_map_params'] = "地图设置";
 $lang['account_map_qso_by_default'] = "QSO (默认)";
 $lang['account_map_qso_confirm'] = "QSO (已确认)";
 $lang['account_map_qso_confirm_same_qso'] = "(如果选择'不'，则显示 ".$lang['account_map_qso_by_default'].")";
+$lang['account_map_highlight_qso'] = "Highlight QSO on map from log";
 
 $lang['account_general_information'] = "基本信息";
 $lang['account_qso_logging_options'] = "QSO录入选项";

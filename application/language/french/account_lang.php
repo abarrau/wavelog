@@ -118,6 +118,7 @@ $lang['account_map_params'] = "Paramètre de la carte";
 $lang['account_map_qso_by_default'] = "QSO (par défaut)";
 $lang['account_map_qso_confirm'] = "QSO (confirmé)";
 $lang['account_map_qso_confirm_same_qso'] = "(Si 'Non', sera affiché comme ".$lang['account_map_qso_by_default'].")";
+$lang['account_map_highlight_qso'] = "Affiche le QSO sélectionné sur la carte";
 
 $lang['account_general_information'] = "Informations Générales";
 $lang['account_qso_logging_options'] = "QSO Logging Options";

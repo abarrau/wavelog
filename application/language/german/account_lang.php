@@ -120,6 +120,7 @@ $lang['account_map_params'] = "Karten Einstellungen";
 $lang['account_map_qso_by_default'] = "QSO (standardmässig)";
 $lang['account_map_qso_confirm'] = "QSO (bestätigte)";
 $lang['account_map_qso_confirm_same_qso'] = "(Falls 'Nein', wird '".$lang['account_map_qso_by_default']."' verwendet)";
+$lang['account_map_highlight_qso'] = "Highlight QSO on map from log";
 
 $lang['account_general_information'] = "Generelle Informationen";
 $lang['account_qso_logging_options'] = "QSO-Logging Optionen";
