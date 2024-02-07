@@ -507,18 +507,29 @@
 												} ?>
 											</div>
 										</div>
-										<div class="md-3 col-md-2">
+										<div class="mb-3 col-md-2">
 											<input type="color" class="form-control user_icon_color" name="user_map_qsoconfirm_color" id="user_map_qsoconfirm_color" value="<?php echo $user_map_qsoconfirm_color; ?>" style="padding:initial;<?php echo ($user_map_qsoconfirm_icon=="0")?'display:none;':''; ?>" data-icon="qsoconfirm" />
 										</div>
 									</div>
 									<div class="row">
-										<div class="md-3 col-md-4">
+										<div class="mb-3 col-md-4">
 											<label><?php echo $this->lang->line('gen_hamradio_gridsquare_show'); ?></label>
 										</div>
-										<div class="md-3 col-md-3">
+										<div class="mb-3 col-md-3">
 											<select class="form-select" id="user_map_gridsquare_show" name="user_map_gridsquare_show">
 												<option value="1" <?php if ($user_map_gridsquare_show == 1) { echo " selected =\"selected\""; } ?>><?php echo lang('general_word_yes'); ?></option>
 												<option value="0" <?php if ($user_map_gridsquare_show == 0) { echo " selected =\"selected\""; } ?>><?php echo lang('general_word_no'); ?></option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="mb-3 col-md-4">
+											<label><?php echo $this->lang->line('account_map_highlight_qso'); ?></label>
+										</div>
+										<div class="mb-3 col-md-3">
+											<select class="form-select" id="user_map_highlightqso_show" name="user_map_highlightqso_show">
+												<option value="1" <?php if ($user_map_highlightqso_show == 1) { echo " selected =\"selected\""; } ?>><?php echo lang('general_word_yes'); ?></option>
+												<option value="0" <?php if ($user_map_highlightqso_show == 0) { echo " selected =\"selected\""; } ?>><?php echo lang('general_word_no'); ?></option>
 											</select>
 										</div>
 									</div>

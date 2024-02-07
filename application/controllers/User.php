@@ -492,6 +492,16 @@ class User extends CI_Controller {
 			}
 
 			// [MAP Custom] GET user options //
+			// init all value before //
+			$data['user_map_qso_icon'] = "fas fa-dot-circle";
+			$data['user_map_qso_color'] = "#FF0000";
+			$data['user_map_station_icon'] = "0";
+			$data['user_map_station_color'] = "#0000FF";
+			$data['user_map_qsoconfirm_icon'] = "0";
+			$data['user_map_qsoconfirm_color'] = "#00AA00";
+			$data['user_map_gridsquare_show'] = "0";
+			$data['user_map_highlightqso_show'] = "0";
+			// change if object exist //
 			$this->load->model('user_options_model');
 			$options_object = $this->user_options_model->get_options('map_custom')->result();
 			if (count($options_object)>0) {
@@ -508,15 +518,7 @@ class User extends CI_Controller {
 					} else {
 						$data['user_map_'.$row->option_name.'_'.$row->option_key] = $row->option_value;
 					}
-				}				
-			} else {
-				$data['user_map_qso_icon'] = "fas fa-dot-circle";
-				$data['user_map_qso_color'] = "#FF0000";
-				$data['user_map_station_icon'] = "0";
-				$data['user_map_station_color'] = "#0000FF";
-				$data['user_map_qsoconfirm_icon'] = "0";
-				$data['user_map_qsoconfirm_color'] = "#00AA00";
-				$data['user_map_gridsquare_show'] = "0";
+				}
 			}
 			$data['map_icon_select'] = array(
 				'station'=>array('0', 'fas fa-home', 'fas fa-broadcast-tower', 'fas fa-user', 'fas fa-dot-circle' ),
@@ -566,9 +568,11 @@ class User extends CI_Controller {
 								$this->user_options_model->set_option('map_custom','icon',array($icon=>$json));
 							}
 							$this->user_options_model->set_option('map_custom','gridsquare',array('show'=>xss_clean($this->input->post('user_map_gridsquare_show', true))));
+							$this->user_options_model->set_option('map_custom','highlightqso',array('show'=>xss_clean($this->input->post('user_map_highlightqso_show', true))));
 						} else {
 							$this->user_options_model->del_option('map_custom','icon');
 							$this->user_options_model->del_option('map_custom','gridsquare');
+							$this->user_options_model->del_option('map_custom','highlightqso');
 						}
 
 						$this->session->set_flashdata('success', lang('account_user').' '.$this->input->post('user_name', true).' '.lang('account_word_edited'));
