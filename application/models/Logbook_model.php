@@ -4617,8 +4617,9 @@ function lotw_last_qsl_date($user_id) {
       $json["markers"] = array();
 
       foreach ($qsos_result as $row) {
-        $plot = array('lat'=>0, 'lng'=>0, 'html'=>'', 'label'=>'', 'confirmed'=>'N');
+        $plot = array('qsoid'=>0, 'lat'=>0, 'lng'=>0, 'html'=>'', 'label'=>'', 'confirmed'=>'N');
 
+        $plot['qsoid'] = $row->COL_PRIMARY_KEY;
         $plot['label'] = $row->COL_CALL;
 
         $plot['html'] = "Callsign: ".$row->COL_CALL."<br />Date/Time: ".$row->COL_TIME_ON."<br />";
