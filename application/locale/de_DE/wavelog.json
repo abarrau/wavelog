@@ -1,0 +1,36 @@
+{
+    "generic": {
+        "Mode": "Mode",
+        "Country": "Land",
+        "IOTA Reference": "IOTA Referenz",
+        "SOTA Reference": "SOTA Referenz",
+        "WWFF Reference": "WWFF Referenz",
+        "POTA Reference": "POTA Referenz",
+        "State": "Staat",
+        "Gridsquare": "Planquadrat",
+        "Distance": "Distanz",
+        "Band": "Band",
+        "Frequency": "Frequenz",
+        "Operator": "Operator",
+        "Name": "Name",
+        "Important": "Wichtig",
+        "You have made no QSOs today; time to turn on the radio!": "Du hast heute noch kein QSO gemacht; Es wird Zeit das Funkgerät einzuschalten!",
+        "Date": "Datum",
+        "Time": "Zeit",
+        "Call": "Rufzeichen",
+        "Total":"Total",
+        "Year":"Jahr",
+        "Month": "Monat",
+        "Confirmed": "Bestätigt",
+        "QSL Cards": "QSL Karte",
+        "Today": "Heute",
+        "Sent": "Gesendet",
+        "Received": "Empfangen",
+        "Requested": "Angefordert",
+        "eQSL Cards": "eQSL Karte",
+        "Logbook of the World": "Logbook of The World"
+    },
+    "views/dashboard/index.php": {
+        "Bye": "Auf Wiedersehen"
+    }
+}

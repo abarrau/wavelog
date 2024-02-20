@@ -14,7 +14,7 @@ class Langs {
         'english' => 'en_EN',   // not used //
         'finnish' => '',
         'french' => 'fr_FR',
-        'german' => '',
+        'german' => 'de_DE',
         'greek' => '',
         'italian' => '',
         'polish' => '',
